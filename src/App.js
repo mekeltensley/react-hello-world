@@ -3,11 +3,11 @@ import './App.css';
 
 //Components
 
-import Racing from './Racing';
-import Basketball from './Basketball';
-import Cover from './Cover';
-import Login from './Login';
-import Forum from './Forum';
+// import Racing from './Racing';
+// import Basketball from './Basketball';
+// import Cover from './Cover';
+// import Login from './Login';
+// import Forum from './Forum';
 import Personal from './personal';
 
 class App extends Component {
@@ -23,4 +23,4 @@ class App extends Component {
 export default App; // ES6 syntax for exporting 
 
 //functional component -> made out of a function 
-// class component -> is made out of a class 
+//class component -> is made out of a class 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Personal.css';
+import './personal.css';
 
 class Personal extends Component {
     render() {
@@ -21,7 +21,7 @@ class Personal extends Component {
                                 <span class="icon">
                                     <i class="fas fa-info"></i>
                                 </span>
-                                <span>About</span>
+                                <span title="About">About</span>
                             </a>
                             <a class="navbar-item" href="#services">
                                 <span class="icon">

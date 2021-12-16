@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const displayDrivers = payload,map((driver, idx) => {
+const displayDrivers = payload.map((driver, idx) => {
     return (
         <div>
         </div>
