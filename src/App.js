@@ -8,12 +8,13 @@ import Basketball from './Basketball';
 import Cover from './Cover';
 import Login from './Login';
 import Forum from './Forum';
+import Personal from './personal';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Forum />
+        <Personal/>
       </div>
     )
   }
