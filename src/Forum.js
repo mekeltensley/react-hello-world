@@ -1,8 +1,64 @@
 import React, { Component } from 'react';
 import './Forum.css';
 
-class Forum extends Component {
+const comment = {
+    message: "I love coding. All day everyday....",
+    author: "@theodore",
+};
 
+const commentList = [
+    {
+        message: 'I love bball....',
+        author: '@stephcurry'
+    },
+    {
+        message: 'What are those???? ....',
+        author: '@mike'
+    },
+    {
+        message: 'What up ...',
+        author: '@john'
+    },
+    {
+        message: 'Comment here ...',
+        author: '@jake'
+    },
+    {
+        message: 'Lets go ...',
+        author: '@tombrady'
+    },
+]
+
+const displayCommentList = commentList.map((c, idx) => {
+    return (
+        <article className="post">
+            <h4>{comment.message}</h4>
+            <div className="media">
+                <div className="media-left">
+                    <p className="image is-32x32">
+                        <img src="http://bulma.io/images/placeholders/128x128.png" alt="" />
+                    </p>
+                </div>
+                <div className="media-content">
+                    <div className="content">
+                        <p>
+                            <a href="#">{comment.author}</a> replied 34 minutes ago &nbsp;
+                            <span className="tag">Question</span>
+                        </p>
+                    </div>
+                </div>
+                <div className="media-right">
+                    <span className="has-text-grey-light"
+                    ><i className="fa fa-comments"></i> 1</span
+                    >
+                </div>
+            </div>
+        </article>
+
+    );
+});
+
+class Forum extends Component {
     render() {
         return (
             <div>
@@ -10,7 +66,7 @@ class Forum extends Component {
                     <div class="container">
                         <div class="navbar-brand">
                             <a class="navbar-item" href="../">
-                                <img src="../images/bulma.png" width="112" height="28"/>
+                                <img src="../images/bulma.png" width="112" height="28" />
                             </a>
                             <div class="navbar-burger burger" data-target="topNav">
                                 <span></span>
@@ -65,7 +121,7 @@ class Forum extends Component {
                             </div>
                             <div class="navbar-end">
                                 <div class="navbar-item">
-                                    <input class="input" type="search" placeholder="Search forum..."/>
+                                    <input class="input" type="search" placeholder="Search forum..." />
                                 </div>
                             </div>
                         </div>
@@ -97,7 +153,7 @@ class Forum extends Component {
                                     <div class="media">
                                         <div class="media-left">
                                             <p class="image is-32x32">
-                                                <img src="http://bulma.io/images/placeholders/128x128.png"/>
+                                                <img src="http://bulma.io/images/placeholders/128x128.png" />
                                             </p>
                                         </div>
                                         <div class="media-content">
@@ -118,7 +174,7 @@ class Forum extends Component {
                                     <div class="media">
                                         <div class="media-left">
                                             <p class="image is-32x32">
-                                                <img src="http://bulma.io/images/placeholders/128x128.png"/>
+                                                <img src="http://bulma.io/images/placeholders/128x128.png" />
                                             </p>
                                         </div>
                                         <div class="media-content">
@@ -139,7 +195,7 @@ class Forum extends Component {
                                     <div class="media">
                                         <div class="media-left">
                                             <p class="image is-32x32">
-                                                <img src="http://bulma.io/images/placeholders/128x128.png"/>
+                                                <img src="http://bulma.io/images/placeholders/128x128.png" />
                                             </p>
                                         </div>
                                         <div class="media-content">
@@ -160,7 +216,7 @@ class Forum extends Component {
                                     <div class="media">
                                         <div class="media-left">
                                             <p class="image is-32x32">
-                                                <img src="http://bulma.io/images/placeholders/128x128.png"/>
+                                                <img src="http://bulma.io/images/placeholders/128x128.png" />
                                             </p>
                                         </div>
                                         <div class="media-content">
@@ -181,7 +237,7 @@ class Forum extends Component {
                                     <div class="media">
                                         <div class="media-left">
                                             <p class="image is-32x32">
-                                                <img src="http://bulma.io/images/placeholders/128x128.png"/>
+                                                <img src="http://bulma.io/images/placeholders/128x128.png" />
                                             </p>
                                         </div>
                                         <div class="media-content">
@@ -202,7 +258,7 @@ class Forum extends Component {
                                     <div class="media">
                                         <div class="media-left">
                                             <p class="image is-32x32">
-                                                <img src="http://bulma.io/images/placeholders/128x128.png"/>
+                                                <img src="http://bulma.io/images/placeholders/128x128.png" />
                                             </p>
                                         </div>
                                         <div class="media-content">
@@ -218,6 +274,7 @@ class Forum extends Component {
                                         </div>
                                     </div>
                                 </article>
+                                {displayCommentList}
                             </div>
                         </div>
                     </div>
