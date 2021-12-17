@@ -8,13 +8,15 @@ import './App.css';
 // import Cover from './Cover';
 // import Login from './Login';
 // import Forum from './Forum';
-import Personal from './personal';
+import Personal from './Personal';
+import Cheatsheet from './Cheatsheet';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Personal/>
+        <Cheatsheet />
       </div>
     )
   }
