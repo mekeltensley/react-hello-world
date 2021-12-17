@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Personal from './personal';
+import Personal from './Personal';
 
 test('renders about tag', () => {
     render(<Personal />);
@@ -11,3 +11,11 @@ test('renders about tag', () => {
     const spanElement = screen.getByTitle(/Services/i);
     expect(spanElement).toBeInTheDocument();
   });
+  test('renders resume tag', () => {
+    render(<Personal />);
+    const spanElement = screen.getByTitle(/Resume/i);
+    expect(spanElement).toBeInTheDocument();
+  });
+  
+  
+  
