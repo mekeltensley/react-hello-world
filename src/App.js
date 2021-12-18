@@ -10,13 +10,18 @@ import './App.css';
 // import Forum from './Forum';
 import Personal from './Personal';
 import Cheatsheet from './Cheatsheet';
+import Article from './Article';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Personal/>
+        <Personal 
+        title="I'm Mekel"
+        subtitle="A Creative and Full Stack Developer"
+        message="Welcome to my portfolio"/>
         <Cheatsheet />
+        <Article />
       </div>
     )
   }
